@@ -506,10 +506,38 @@ function strictMode(x, y, z) {
     return "kono mode ei na";
   }
 }
+console.log("problem no 29 is:");
 console.log(strictMode(2, 4, 5));
 
 // 30
 
 // JavaScript program to check from three given numbers (non negative integers) that two or all of them have the same rightmost digit.
 
-function rightMost(x, y) {}
+// 43
+
+//didnt understood the ques
+
+console.log("problem no 30 is still unsolved!!!!!!!!!!!!!!!!");
+
+// 31
+
+// JavaScript program to check from three given integers that whether a number is greater than or equal to 20 and less than one of the others.
+
+// 44
+
+// didnt understood the problem!!
+
+console.log("problem no 31 is still unsolved!!!!!!!!!!!!!!!!");
+
+// 32
+
+// JavaScript program to check two given integer values and return true if one of the number is 15 or if their sum or difference is 15
+
+function checKINGthematch(x, y) {
+  if (x === 15 || y === 15 || (x + y === 15 || x - y === 15)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(checKINGthematch(20, 5));
