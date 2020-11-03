@@ -587,7 +587,7 @@ function ultaString(str) {
     .join("");
 }
 
-console.log("problem no 35 but dynamicly:");
+console.log("problem no 35 but dynamically:");
 console.log(ultaString("hello"));
 
 // 36
@@ -627,3 +627,11 @@ function vowelsearch(str) {
 }
 console.log("problem no 41:");
 console.log(vowelsearch("Angular"));
+
+///////////////////////////////////////////////////////////////////////////////
+
+let ground = "hello";
+let sky = ground.slice(1);
+console.log(sky);
+
+///////////////////////////////////////////////////////////////////////////////
