@@ -635,3 +635,10 @@ let sky = ground.slice(1);
 console.log(sky);
 
 ///////////////////////////////////////////////////////////////////////////////
+
+function removingNum(x) {
+  //  x.replace(/[0-9]/g, "");
+  console.log(x.indexOf("f"));
+  console.log(x.substr(6, 7));
+}
+console.log(removingNum("abc234fhsdfh"));
