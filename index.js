@@ -626,15 +626,3 @@ function vowelsearch(str) {
 }
 console.log("problem no 41:");
 console.log(vowelsearch("Angular"));
-
-// 42
-
-// JavaScript program to check whether a given string contains equal number of p's and t's.
-
-// 43
-
-// JavaScript program to divide two positive numbers and return a string with properly formatted commas.
-
-// 44
-
-// JavaScript program to create a new string of specified copies (positive number) of a given string.
