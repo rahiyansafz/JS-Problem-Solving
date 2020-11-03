@@ -540,4 +540,41 @@ function checKINGthematch(x, y) {
     return false;
   }
 }
+console.log("problem no 32:");
 console.log(checKINGthematch(20, 5));
+
+// 33
+
+// JavaScript program to check two given non-negative integers that whether one of the number (not both) is multiple of 7 or 11.
+
+function Valuesinofat(x, y) {
+  if (x % 7 === 0 || x % 11 === 0 || (y % 7 === 0 || y % 11 === 0)) {
+    return "jay";
+  } else {
+    return "jayna";
+  }
+}
+console.log("problem no 33:");
+console.log(Valuesinofat(7, 12));
+
+// 34
+
+// JavaScript program to check whether a given number is presents in the range 40..10000.
+// For example 40 presents in 40 and 10000
+
+function rangeChecKing(x, y, n) {
+  if (n < 40 && n > 10000) {
+    return false;
+  } else if (n > x && n < y) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log("problem no 34:");
+console.log(rangeChecKing(40, 6000, 40));
+
+// 35
+
+// JavaScript program to reverse a given string
