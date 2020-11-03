@@ -385,12 +385,6 @@ console.log(sameint(2, 2, 2));
 
 // JavaScript program to create new string with first 3 characters are in lower case from a given string. If the string length is less than 3 convert all the characters in upper case.
 
-function upperFunc(x) {
-  if (x.length < 3) {
-    return x.toUpperCase();
-  }
-}
-
 console.log("problem 24 is still unsolved!!!!!!!!!!!!!!!!!!");
 
 // // 25
@@ -513,19 +507,9 @@ console.log(strictMode(2, 4, 5));
 
 // JavaScript program to check from three given numbers (non negative integers) that two or all of them have the same rightmost digit.
 
-// 43
-
-//didnt understood the ques
-
-console.log("problem no 30 is a lill bit higher level problem");
-
 // 31
 
 // JavaScript program to check from three given integers that whether a number is greater than or equal to 20 and less than one of the others.
-
-// 44
-
-console.log("problem no 31 is a lill bit higher level problem");
 
 // 32
 
@@ -577,7 +561,7 @@ console.log(rangeChecKing(40, 6000, 40));
 
 // JavaScript program to reverse a given string
 
-console.log("problem no 36:");
+console.log("problem no 35:");
 
 let aString = "hello!";
 
@@ -593,7 +577,7 @@ console.log(backtothe);
 let newDescription = backtothe.replace(/,/g, "");
 console.log(newDescription);
 
-// Alternative or 36
+// Alternative of 35
 
 function ultaString(str) {
   return str
@@ -602,30 +586,22 @@ function ultaString(str) {
     .join("");
 }
 
-console.log("problem no 36 but dynamicly:");
+console.log("problem no 35 but dynamicly:");
 console.log(ultaString("hello"));
 
-// 37
+// 36
 
 // JavaScript program to replace every character in a given string with the character following it in the alphabet.
 
-//// NOT NOW!!!!!!!!
-
-//// 49 NO
-
-console.log("problem no 37 is a lill bit higher level problem");
-
-// 38
+// 37
 
 // JavaScript program to capitalize the first letter of each word of a given string.
 
-////////VERY HARD!!!!!!!!!!!!!!!!!
+//38
 
-// 50 NO
+// JavaScript program to convert a given number to hours and minutes.
 
-console.log("problem no 38 is a lill bit higher level problem");
-
-// 40
+// 39
 // JavaScript program to convert the letters of a given string in alphabetical order.
 
 function serially(str) {
@@ -634,15 +610,31 @@ function serially(str) {
     .sort()
     .join("");
 }
-console.log("problem no 40:");
+console.log("problem no 39:");
 console.log(serially("Angular"));
 
-// 42
+// 40
+
+// JavaScript program to check whether the characters a and b are separated by exactly 3 places anywhere (at least once) in a given string.
+
+// 41
 
 // JavaScript program to count the number of vowels in a given string.
 
 function vowelsearch(str) {
   return str.replace(/[^aeiou]/g, "").length;
 }
-console.log("problem no 42:");
+console.log("problem no 41:");
 console.log(vowelsearch("Angular"));
+
+// 42
+
+// JavaScript program to check whether a given string contains equal number of p's and t's.
+
+// 43
+
+// JavaScript program to divide two positive numbers and return a string with properly formatted commas.
+
+// 44
+
+// JavaScript program to create a new string of specified copies (positive number) of a given string.
