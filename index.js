@@ -517,7 +517,7 @@ console.log(strictMode(2, 4, 5));
 
 //didnt understood the ques
 
-console.log("problem no 30 is still unsolved!!!!!!!!!!!!!!!!");
+console.log("problem no 30 is a lill bit higher level problem");
 
 // 31
 
@@ -525,9 +525,7 @@ console.log("problem no 30 is still unsolved!!!!!!!!!!!!!!!!");
 
 // 44
 
-// didnt understood the problem!!
-
-console.log("problem no 31 is still unsolved!!!!!!!!!!!!!!!!");
+console.log("problem no 31 is a lill bit higher level problem");
 
 // 32
 
@@ -578,3 +576,73 @@ console.log(rangeChecKing(40, 6000, 40));
 // 35
 
 // JavaScript program to reverse a given string
+
+console.log("problem no 36:");
+
+let aString = "hello!";
+
+let makeArraying = aString.split("");
+console.log(makeArraying);
+
+makeArraying.reverse();
+console.log(makeArraying);
+
+let backtothe = makeArraying.toString();
+console.log(backtothe);
+
+let newDescription = backtothe.replace(/,/g, "");
+console.log(newDescription);
+
+// Alternative or 36
+
+function ultaString(str) {
+  return str
+    .split("")
+    .reverse()
+    .join("");
+}
+
+console.log("problem no 36 but dynamicly:");
+console.log(ultaString("hello"));
+
+// 37
+
+// JavaScript program to replace every character in a given string with the character following it in the alphabet.
+
+//// NOT NOW!!!!!!!!
+
+//// 49 NO
+
+console.log("problem no 37 is a lill bit higher level problem");
+
+// 38
+
+// JavaScript program to capitalize the first letter of each word of a given string.
+
+////////VERY HARD!!!!!!!!!!!!!!!!!
+
+// 50 NO
+
+console.log("problem no 38 is a lill bit higher level problem");
+
+// 40
+// JavaScript program to convert the letters of a given string in alphabetical order.
+
+function serially(str) {
+  return str
+    .split("")
+    .sort()
+    .join("");
+}
+console.log("problem no 40:");
+console.log(serially("Angular"));
+
+// 42
+
+// JavaScript program to count the number of vowels in a given string.
+
+function vowelsearch(str) {
+  return str.replace(/[^aeiou]/g, "").length;
+}
+console.log("problem no 42:");
+console.log(vowelsearch("Angular"));
