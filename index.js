@@ -309,18 +309,21 @@ console.log("");
 // 19
 
 // JavaScript program to find a value which is nearest to 100 from two different given integer values
+function comparing(x, y) {
+  if (x != y) {
+    let x1 = Math.abs(x - 100);
+    let y1 = Math.abs(y - 100);
 
-//
-//
-//
-//
-//
-//
-//
-//
+    if (x1 < y1) {
+      console.log("x is nearest");
+    }
+    if (y1 < x1) {
+      console.log("y is nearest");
+    } else return false;
+  }
+}
+console.log(comparing(90, 101));
 
-console.log("problem 19 is still unsolved!!!!!!!!!!!!!!!!!!");
-console.log("");
 // 20
 
 // JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
@@ -673,7 +676,3 @@ function removeChar(x) {
 }
 console.log(removeChar("hel123lo"));
 console.log("");
-
-console.log(
-  "/////////////////////////////////////////////////////////////////////////////////"
-);
