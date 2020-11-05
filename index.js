@@ -49,6 +49,7 @@ let name = "hello.ts";
 
 console.log("problem no 1:");
 console.log(name.split(".").pop());
+console.log("");
 
 // 2
 
@@ -60,7 +61,7 @@ if (nmbr => 13) {
   console.log("problem no 2:");
   console.log(nmbr * 2);
 }
-
+console.log("");
 // 3
 
 // JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum
@@ -74,7 +75,7 @@ function prbOne(x, y) {
 }
 console.log("problem no 3:");
 console.log(prbOne(30, 30));
-
+console.log("");
 // 4
 
 // JavaScript program to compute the absolute difference between a specified
@@ -89,7 +90,7 @@ function prbTwo(x) {
 }
 console.log("problem no 4:");
 console.log(prbTwo(71));
-
+console.log("");
 // 5
 
 // JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50
@@ -104,7 +105,7 @@ function prbThree(x, y) {
 
 console.log("problem no 5:");
 console.log(prbThree(0, 50));
-
+console.log("");
 // 6
 
 // JavaScript program to check whether a given integer is within 20 of 100 or 400.
@@ -120,7 +121,7 @@ function myProblem(x) {
 }
 console.log("problem no 6:");
 console.log(myProblem(401));
-
+console.log("");
 // 7
 
 // JavaScript program to check from two given integers, whether one is positive and another one is negative.
@@ -134,7 +135,7 @@ function negpos(x, y) {
 }
 console.log("problem no 7:");
 console.log(negpos(2, -6));
-
+console.log("");
 // 8
 
 // JavaScript program to create a new string adding "Py" in front of a given string. If the given string begins with "Py" then return the original string
@@ -148,7 +149,7 @@ function huGe(x) {
 }
 console.log("problem no 8:");
 console.log(huGe("Python"));
-
+console.log("");
 // 9
 
 // JavaScript program to remove a character at the specified position of a given string and return the new string
@@ -164,7 +165,7 @@ function myRemove(x, y) {
 
 console.log("problem no 9:");
 console.log(myRemove("Typescript", 6));
-
+console.log("");
 // 10
 
 // JavaScript program to create a new string from a given string changing the position of first and last characters. The string length must be greater than or equal to 1
@@ -179,7 +180,7 @@ function posChanging(x) {
 
 console.log("problem no 10:");
 console.log(posChanging("this"));
-
+console.log("");
 // 11
 
 // JavaScript program to create a new string from a given string with the first character of the given string added at the front and back
@@ -191,7 +192,7 @@ function num11(x) {
 
 console.log("problem no 11:");
 console.log(num11("hello"));
-
+console.log("");
 // 12
 
 // JavaScript program to check whether a given positive number is a multiple of 3 or a multiple of 7
@@ -206,7 +207,7 @@ function posNum(x) {
 
 console.log("problem no 12:");
 console.log(posNum(3));
-
+console.log("");
 // 13
 
 // JavaScript program to create a new string from a given string taking the last 3 characters and added at both the front and back. The string length must be 3 or more
@@ -222,7 +223,7 @@ function num13(x) {
 
 console.log("problem no 13:");
 console.log(num13("hello"));
-
+console.log("");
 // 14
 
 // JavaScript program to check whether a string starts with 'Java' and false otherwise.
@@ -241,7 +242,7 @@ function checKing(x) {
 
 console.log("problem no 14:");
 console.log(checKing("Typescript"));
-
+console.log("");
 // 15
 
 // JavaScript program to check whether two given integer values are in the range 50..99 (inclusive). Return true if either of them are in the said range
@@ -256,7 +257,7 @@ function intG(x, y) {
 
 console.log("problem no 15:");
 console.log(intG(5, 55));
-
+console.log("");
 // 16
 
 // JavaScript program to check whether three given integer values are in the range 50..99(inclusive). Return true if one or more of them are in the said range
@@ -270,7 +271,7 @@ function againintG(x, y, z) {
 }
 console.log("problem no 16:");
 console.log(againintG(50, 6, 8));
-
+console.log("");
 // 17
 
 // JavaScript program to check whether a string "Script" presents at 5th (index 4) position in a given string, if "Script" presents in the string return the string without "Script" otherwise return the original one
@@ -286,7 +287,7 @@ console.log(againintG(50, 6, 8));
 //
 
 console.log("problem 17 is still unsolved!!!!!!!!!!!!!!!!!!");
-
+console.log("");
 // 18
 
 // JavaScript program to find the largest of three given integers.
@@ -304,7 +305,7 @@ function largeFunc(x, y, z) {
 }
 console.log("problem no 18:");
 console.log(largeFunc(75, 25, 96));
-
+console.log("");
 // 19
 
 // JavaScript program to find a value which is nearest to 100 from two different given integer values
@@ -319,7 +320,7 @@ console.log(largeFunc(75, 25, 96));
 //
 
 console.log("problem 19 is still unsolved!!!!!!!!!!!!!!!!!!");
-
+console.log("");
 // 20
 
 // JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
@@ -337,7 +338,7 @@ function doublecheKing(x, y) {
 
 console.log("problem no 20:");
 console.log(doublecheKing(70, 80));
-
+console.log("");
 // 21
 
 // JavaScript program to find the larger number from the two given positive integers, the two numbers are in the range 40..60 inclusive.
@@ -351,7 +352,7 @@ function numbint(x, y) {
 }
 console.log("problem no 21:");
 console.log(numbint(13, 20));
-
+console.log("");
 // 22
 
 //  program to check whether a specified character exists within the 2nd to 4th position in a given string.
@@ -367,7 +368,7 @@ console.log(numbint(13, 20));
 //
 
 console.log("problem 22 is still unsolved!!!!!!!!!!!!!!!!!!");
-
+console.log("");
 // 23
 
 // JavaScript program to check whether the last digit of the three given positive integers is same.
@@ -381,13 +382,13 @@ function sameint(x, y, z) {
 }
 console.log("problem no 23:");
 console.log(sameint(2, 2, 2));
-
+console.log("");
 // 24
 
 // JavaScript program to create new string with first 3 characters are in lower case from a given string. If the string length is less than 3 convert all the characters in upper case.
 
 console.log("problem 24 is still unsolved!!!!!!!!!!!!!!!!!!");
-
+console.log("");
 // // 25
 
 // // JavaScript program to check the total marks of a student in various examinations. The student will get A+ grade if the total marks are in the range 89..100 inclusive, if the examination is "Final-exam." the student will get A+ grade and total marks must be greater than or equal to 90. Return true if the student get A+ grade or false otherwise.
@@ -439,7 +440,7 @@ function result(x) {
 
 console.log("Problem no 25:");
 console.log(result(90));
-
+console.log("");
 // 26
 
 // JavaScript program to compute the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
@@ -453,7 +454,7 @@ function summing(x, y) {
 }
 console.log("problem no 26:");
 console.log(summing(20, 20));
-
+console.log("");
 // 27
 
 // JavaScript program to check from two given integers whether one of them is 8 or their sum or difference is 8
@@ -470,7 +471,7 @@ function diffChecking(x, y) {
 
 console.log("problem no 27:");
 console.log(diffChecking(3, 5));
-
+console.log("");
 // 28
 
 // JavaScript program to check three given numbers, if the three numbers are same return 30 otherwise return 20 and if two numbers are same return 40.
@@ -486,7 +487,7 @@ function threeNumberChecking(x, y, z) {
 }
 console.log("problem no 28 is:");
 console.log(threeNumberChecking(5, 7, 5));
-
+console.log("");
 // 29
 
 // JavaScript program to check whether three given numbers are increasing in strict mode or in soft mode.
@@ -503,7 +504,7 @@ function strictMode(x, y, z) {
 }
 console.log("problem no 29 is:");
 console.log(strictMode(2, 4, 5));
-
+console.log("");
 // 30
 
 // JavaScript program to check from three given numbers (non negative integers) that two or all of them have the same rightmost digit.
@@ -525,7 +526,7 @@ function checKINGthematch(x, y) {
 }
 console.log("problem no 32:");
 console.log(checKINGthematch(20, 5));
-
+console.log("");
 // 33
 
 // JavaScript program to check two given non-negative integers that whether one of the number (not both) is multiple of 7 or 11.
@@ -539,7 +540,7 @@ function Valuesinofat(x, y) {
 }
 console.log("problem no 33:");
 console.log(Valuesinofat(7, 12));
-
+console.log("");
 // 34
 
 // JavaScript program to check whether a given number is presents in the range 40..10000.
@@ -557,7 +558,7 @@ function rangeChecKing(x, y, n) {
 
 console.log("problem no 34:");
 console.log(rangeChecKing(40, 6000, 40));
-
+console.log("");
 // 35
 
 // JavaScript program to reverse a given string
@@ -589,7 +590,7 @@ function ultaString(str) {
 
 console.log("problem no 35 but dynamically:");
 console.log(ultaString("hello"));
-
+console.log("");
 // 36
 
 // JavaScript program to replace every character in a given string with the character following it in the alphabet.
@@ -613,7 +614,7 @@ function serially(str) {
 }
 console.log("problem no 39:");
 console.log(serially("Angular"));
-
+console.log("");
 // 40
 
 // JavaScript program to check whether the characters a and b are separated by exactly 3 places anywhere (at least once) in a given string.
@@ -627,7 +628,7 @@ function vowelsearch(str) {
 }
 console.log("problem no 41:");
 console.log(vowelsearch("Angular"));
-
+console.log("");
 ///////////////////////////////////////////////////////////////////////////////
 console.log(
   "/////////////////////////////////////////////////////////////////////////////////"
@@ -658,9 +659,9 @@ console.log(makeArr);
 
 let polo = makeArr.splice(abcde, 1);
 console.log(makeArr);
-
+console.log("");
 console.log(
-  "////////////////////////////////////////////////////////////////////"
+  "/////////////////////////////////////////////////////////////////////////////////"
 );
 
 function removeChar(x) {
@@ -670,4 +671,9 @@ function removeChar(x) {
   console.log(x);
   return notokay;
 }
-console.log(removeChar("hel1lo2"));
+console.log(removeChar("hel123lo"));
+console.log("");
+
+console.log(
+  "/////////////////////////////////////////////////////////////////////////////////"
+);
