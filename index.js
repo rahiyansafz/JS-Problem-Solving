@@ -3,7 +3,7 @@ import "./style.css";
 
 // Write Javascript code!
 const appDiv = document.getElementById("app");
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+appDiv.innerHTML = `<h1>JS Problem Solving</h1>`;
 
 // let str = "HELLO";
 
@@ -316,14 +316,14 @@ function comparing(x, y) {
 
     if (x1 < y1) {
       console.log("x is nearest");
-    }
-    if (y1 < x1) {
+    } else if (y1 < x1) {
       console.log("y is nearest");
-    } else {
-       return false;
+    }
+  } else {
+    return "kichui na";
   }
 }
-console.log(comparing(90, 101));
+console.log(comparing(90, 90));
 
 // 20
 

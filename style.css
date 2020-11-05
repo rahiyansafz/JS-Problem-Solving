@@ -1,4 +1,12 @@
 h1,
 h2 {
   font-family: "Inter UI", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  font-size: 10em;
+}
+
+body {
+  background-color: #121222;
+  margin: 100px auto;
 }
