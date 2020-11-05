@@ -319,7 +319,8 @@ function comparing(x, y) {
     }
     if (y1 < x1) {
       console.log("y is nearest");
-    } else return false;
+    } else {
+       return false;
   }
 }
 console.log(comparing(90, 101));
