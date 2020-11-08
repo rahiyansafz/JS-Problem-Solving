@@ -638,42 +638,44 @@ console.log(
   "/////////////////////////////////////////////////////////////////////////////////"
 );
 
+// // let ground = "hello123";
+// // console.log(ground);
+// // let makeArr = ground.split("");
+// // console.log(makeArr);
+
+// // makeArr.splice(2, 1);
+// // console.log(makeArr);
+
+// // let agaiString = makeArr.toString();
+// // console.log(agaiString);
+
+// // let lastAssign = agaiString.replace(/,/g, "");
+
+// // console.log(lastAssign);
+
 // let ground = "hello123";
 // console.log(ground);
+// let abcde = ground.indexOf("2");
+// console.log("pos of One:", abcde);
+
 // let makeArr = ground.split("");
 // console.log(makeArr);
 
-// makeArr.splice(2, 1);
+// let polo = makeArr.splice(abcde, 1);
 // console.log(makeArr);
+// console.log("");
+// console.log(
+//   "/////////////////////////////////////////////////////////////////////////////////"
+// );
 
-// let agaiString = makeArr.toString();
-// console.log(agaiString);
+// function removeChar(x) {
+//   let notokay;
+//   notokay = x.replace(/\d/g, "");
+//   console.log("else:", notokay);
+//   console.log(x);
+//   return notokay;
+// }
+// console.log(removeChar("hel123lo"));
+// console.log("");
 
-// let lastAssign = agaiString.replace(/,/g, "");
-
-// console.log(lastAssign);
-
-let ground = "hello123";
-console.log(ground);
-let abcde = ground.indexOf("2");
-console.log("pos of One:", abcde);
-
-let makeArr = ground.split("");
-console.log(makeArr);
-
-let polo = makeArr.splice(abcde, 1);
-console.log(makeArr);
-console.log("");
-console.log(
-  "/////////////////////////////////////////////////////////////////////////////////"
-);
-
-function removeChar(x) {
-  let notokay;
-  notokay = x.replace(/\d/g, "");
-  console.log("else:", notokay);
-  console.log(x);
-  return notokay;
-}
-console.log(removeChar("hel123lo"));
-console.log("");
+// //////////////////////////////////////////////////////////////////////////////////
