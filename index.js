@@ -884,3 +884,14 @@ console.log(center("Angular"));
 console.log("");
 console.log("");
 console.log("");
+
+// 51
+// JavaScript program to concatenate two strings and return the result. If the length of the strings are not same then remove the characters from the longer string.
+
+// function concatig(x, y) {
+//   const m = Math.min(x.length, y.length);
+
+//   return x.substring(x.length - m) + y.substring(y.length - m);
+// }
+
+// console.log(concatig("Python", "JS"));
