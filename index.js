@@ -979,13 +979,13 @@ console.log("");
 function summingThree(nums) {
   let result = 0;
   for (let i = 0; i < nums.length; i++) {
-    if (nums.length == 3) {
-      result += nums[i];
-    } else {
-      return "index out of bound";
-    }
+    // if (nums.length == 3) {
+    result += nums[i];
+    // } else {
+    // return "index out of bound";
+    // }
   }
   return result;
 }
 
-console.log(summingThree([10, 10, 10]));
+console.log(summingThree([10, 10, 10, 10]));
