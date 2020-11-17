@@ -909,6 +909,7 @@ function finDingString(str) {
 console.log(finDingString("JavaScript"));
 console.log(finDingString("TypeScript"));
 console.log(finDingString("Java Scripts"));
+console.log("");
 //////////////////////////////////////////////////////////////////////
 // 53
 // JavaScript program to display the city name if the string begins with "Los" or "New" otherwise return blank.
@@ -925,6 +926,7 @@ function city_name(str) {
 
 console.log(city_name("New York"));
 console.log(city_name("London"));
+console.log("");
 ////////////////////////////////////////////////////////
 // 54
 // JavaScript program to create a new string from a given string, removing the first and last characters of the string if the first or last character are 'P'. Return the original string if the condition is not satisfied.
@@ -1020,3 +1022,7 @@ let rotateLeft = array => {
   return array;
 };
 console.log(rotateLeft([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+console.log("");
+
+// 58
+// JavaScript program to check whether 1 appears in first or last position of a given array of integers. The array length must be greater or equal to 1
