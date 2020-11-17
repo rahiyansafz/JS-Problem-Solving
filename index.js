@@ -895,7 +895,7 @@
 // // }
 
 // // console.log(concatig("Python", "JS"));
-
+//////////////////////////////////////////////////////////////////////////
 // 52
 // JavaScript program to test whether a string end with "Script". The string length must be greater or equal to 6.
 
@@ -909,7 +909,7 @@ function finDingString(str) {
 console.log(finDingString("JavaScript"));
 console.log(finDingString("TypeScript"));
 console.log(finDingString("Java Scripts"));
-
+//////////////////////////////////////////////////////////////////////
 // 53
 // JavaScript program to display the city name if the string begins with "Los" or "New" otherwise return blank.
 function city_name(str) {
@@ -925,7 +925,7 @@ function city_name(str) {
 
 console.log(city_name("New York"));
 console.log(city_name("London"));
-
+////////////////////////////////////////////////////////
 // 54
 // JavaScript program to create a new string from a given string, removing the first and last characters of the string if the first or last character are 'P'. Return the original string if the condition is not satisfied.
 
@@ -951,3 +951,41 @@ function removingP(the_string) {
   }
 }
 removingP("PythonP");
+console.log("");
+/////////////////////////////////
+// 55
+// JavaScript program to create a new string using the first and last n characters from a given sting. The string length must be greater or equal to n.
+
+function two_string(str, n) {
+  first_part = str.substring(0, n);
+  last_part = str.substring(str.length - n);
+  return first_part + last_part;
+}
+
+console.log(two_string("Angular", 2));
+console.log(two_string("Angular", 3));
+console.log("");
+//////////////////////////////////////////////////////////////
+
+// 56
+// JavaScript program to compute the sum of three elements of a given array of integers of length 3
+
+// function summingThree(nums) {
+//   return nums[0] + nums[1] + nums[2];
+// }
+// console.log(summingThree([5, 5, 5]));
+
+//
+function summingThree(nums) {
+  let result = 0;
+  for (let i = 0; i < nums.length; i++) {
+    if (nums.length == 3) {
+      result += nums[i];
+    } else {
+      return "index out of bound";
+    }
+  }
+  return result;
+}
+
+console.log(summingThree([10, 10, 10]));
