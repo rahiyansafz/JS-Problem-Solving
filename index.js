@@ -1075,3 +1075,22 @@ function reverse(arr) {
   return arr;
 }
 console.log(reverse([1, 2, 3]));
+console.log("");
+
+// 61
+// JavaScript program to find the larger value between the first or last and set all the other elements with that value. Display the new array.
+function array(arr) {
+  let max = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  let display = [];
+  for (let i = 0; i < arr.length; i++) {
+    display.push(max);
+  }
+  return display;
+}
+console.log(array([20, 30, 40, 55, 33]));
+//////////////
