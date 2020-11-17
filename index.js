@@ -1109,4 +1109,15 @@ console.log(middle_elements([1, 2, 3], [1, 5, 6]));
 console.log(middle_elements([3, 3, 3], [2, 8, 0]));
 console.log(middle_elements([4, 2, 7], [2, 4, 5]));
 console.log("");
-////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+/////////////////////
+///////
+//
+
+function for_pushing_the_middle_element(element) {
+  let para = element.join("");
+  let newArr = "";
+  const abc = (para.length - 1) / 2;
+  console.log(abc);
+}
+console.log(for_pushing_the_middle_element([1, 2, 3, 4, 5, 6, 7, 8, 9]));
