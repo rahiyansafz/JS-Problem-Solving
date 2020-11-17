@@ -989,3 +989,34 @@ function summingThree(nums) {
 }
 
 console.log(summingThree([10, 10, 10, 10]));
+console.log("");
+
+// 57
+// JavaScript program to rotate the elements left of a given array of integers of length 3.
+function reverse(arr) {
+  arr.unshift(arr.pop());
+  return arr;
+}
+console.log(reverse([10, 11, 12]));
+/////////////////////////////////////
+function rotateArray(intArray) {
+  var firstElement = intArray[0];
+  intArray.splice(0, 1);
+  intArray.push(firstElement);
+
+  return intArray;
+}
+console.log(rotateArray([1, 2, 3, 4, 5, 6]));
+/////////////////////////////////////////////////
+let rotateLeft = array => {
+  let first = array[0];
+  for (let i = 0; i < array.length; i++) {
+    if (i === array.length - 1) {
+      array[array.length - 1] = first;
+    } else {
+      array[i] = array[i + 1];
+    }
+  }
+  return array;
+};
+console.log(rotateLeft([1, 2, 3, 4, 5, 6, 7, 8, 9]));
