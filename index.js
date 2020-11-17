@@ -1079,60 +1079,32 @@ console.log("");
 
 // 61
 // JavaScript program to find the larger value between the first or last and set all the other elements with that value. Display the new array.
-// function array(arr) {
-//   let max = 0;
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr[i] > max) {
-//       max = arr[i];
-//     }
-//   }
-//   let display = [];
-//   for (let i = 0; i < arr.length; i++) {
-//     display.push(max);
-//   }
-//   return display;
-// }
-// console.log(array([20, 30, 40, 55, 33]));
-//////////////
+function array(arr) {
+  let max = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  let display = [];
+  for (let i = 0; i < arr.length; i++) {
+    display.push(max);
+  }
+  return display;
+}
+console.log(array([20, 30, 40, 55, 33]));
+console.log("");
+///////////////////////////////////
 
-// // SHERLOCK HOLMES & SQUARES
-// 'use strict';
+// 62
+// JavaScript program to create a new array taking the middle elements of the two arrays of integer and each length 3.
 
-// process.stdin.resume();
-// process.stdin.setEncoding("ascii");
+function middle_elements(a, b) {
+  var new_array = [];
+  new_array.push(a[1], b[1]);
 
-// var input_stdin = "";
-// var input_stdin_array = "";
-// var input_currentline = 0;
-
-// process.stdin.on('data', function (data) {
-//   input_stdin += data;
-// });
-
-// process.stdin.on('end', function () {
-//   input_stdin_array = input_stdin.split("\n");
-//   main();
-// });
-
-// function readLine() {
-//   return input_stdin_array[input_currentline++];
-// }
-
-// // Complete the squares function below.
-// function countSquares(lower, upper) {
-//   var lowerSquare = Math.ceil(Math.sqrt(lower));
-//   var upperSquare = Math.floor(Math.sqrt(upper));
-//   if(lowerSquare > upperSquare)
-//     return 0;
-//   else
-//     return upperSquare - lowerSquare + 1;
-// }
-
-// function main() {
-//   var t = parseInt(readLine());
-//   for(var i = 0; i < t; i++){
-//     var numbers = readLine().split(' ').map(function(x) { return parseInt(x); });
-//     console.log(countSquares(numbers[0], numbers[1]));
-//   }
-
-// }
+  return new_array;
+}
+console.log(middle_elements([1, 2, 3], [1, 5, 6]));
+console.log(middle_elements([3, 3, 3], [2, 8, 0]));
+console.log(middle_elements([4, 2, 7], [2, 4, 5]));
