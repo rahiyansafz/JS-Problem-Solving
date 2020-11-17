@@ -939,6 +939,13 @@ function removingP(the_string) {
   ) {
     const brandNewString = the_string.substring(first_letter, last_letter);
     console.log(brandNewString);
+  } else if (
+    the_string.length > 0 &&
+    the_string.charAt(0) == "P" &&
+    (the_string.length > 0 && the_string.charAt(the_string.length - 1) !== "P")
+  ) {
+    const brandNewString = the_string.substring(first_letter);
+    console.log(brandNewString);
   } else {
     console.log(the_string);
   }
