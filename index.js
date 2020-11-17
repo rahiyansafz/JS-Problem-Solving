@@ -1034,3 +1034,44 @@ function findingOne(nums) {
 console.log(findingOne([1, 3, 5]));
 console.log(findingOne([1, 3, 5, 1]));
 console.log(findingOne([2, 4, 6]));
+console.log("");
+/////////////////////////////////////
+
+// 59
+// JavaScript program to check whether the first and last elements are equal of a given array of integers length 3.
+
+function matchingFL(Given) {
+  if (Given.length >= 1) {
+    return Given[0] === Given[Given.length - 1];
+  } else {
+    return false;
+  }
+}
+console.log(matchingFL([10, 20, 30]));
+console.log(matchingFL([10, 20, 30, 10]));
+console.log(matchingFL([20, 20, 20]));
+console.log("");
+///////////////////////////////////////////////////////////
+
+// 60
+// JavaScript program to reverse the elements of a given array of integers length 3.
+
+function reverse3(array) {
+  return array.reverse();
+}
+
+console.log(reverse3([5, 4, 3]));
+console.log(reverse3([1, 0, -1]));
+console.log(reverse3([2, 3, 1]));
+/////////////////////////////////////////////////////////
+function reverse(arr) {
+  // let itrs = Math.floor(arr.length / 2);
+  let itrs = arr.length / 2;
+  for (let i = 0; i < itrs; i++) {
+    let save = arr[i];
+    arr[i] = arr[arr.length - (1 + i)];
+    arr[arr.length - (1 + i)] = save;
+  }
+  return arr;
+}
+console.log(reverse([1, 2, 3]));
