@@ -1114,10 +1114,27 @@ console.log("");
 ///////
 //
 
-function for_pushing_the_middle_element(element) {
+function middle_element(element) {
   let para = element.join("");
   let newArr = "";
   const abc = (para.length - 1) / 2;
   console.log(abc);
 }
-console.log(for_pushing_the_middle_element([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+console.log(middle_element([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+/////////////////////////
+function afunction(x) {
+  let newArray = [];
+  let newArray2 = [];
+  for (let i = 0; i < x.length; i++) {
+    if (x[i].slice(0, 1) === x) {
+      // newArray.push(x[i]);
+    } else {
+      // newArray2.push(x[i]);
+    }
+  }
+  return {
+    Matched: newArray,
+    NotMatched: newArray2
+  };
+}
+console.log(afunction([1, 2, 3, 4, 5, 6, 7, 8, 9]));
