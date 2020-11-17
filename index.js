@@ -920,7 +920,7 @@ function city_name(str) {
     return str;
   }
 
-  return """;
+  return "";
 }
 
 console.log(city_name("New York"));
@@ -930,10 +930,17 @@ console.log(city_name("London"));
 // JavaScript program to create a new string from a given string, removing the first and last characters of the string if the first or last character are 'P'. Return the original string if the condition is not satisfied.
 
 function removingP(the_string) {
+  const first_letter = the_string.length > 0;
+  const last_letter = the_string.length - 1;
   if (
     the_string.length > 0 &&
     the_string.charAt(0) == "P" &&
-    (the_string.length > 1 && the_string.charAt(the_string.length - 1) == "P")
+    (the_string.length > 0 && the_string.charAt(the_string.length - 1) == "P")
   ) {
+    const brandNewString = the_string.substring(first_letter, last_letter);
+    console.log(brandNewString);
+  } else {
+    console.log(the_string);
   }
 }
+removingP("PythonP");
