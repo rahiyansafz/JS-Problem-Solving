@@ -1028,8 +1028,7 @@ console.log("");
 // JavaScript program to check whether 1 appears in first or last position of a given array of integers. The array length must be greater or equal to 1
 
 function findingOne(nums) {
-  var end_pos = nums.length - 1;
-  return nums[0] == 1 || nums[end_pos] == 1;
+  return nums[0] == 1 || nums.length - 1 == 1;
 }
 
 console.log(findingOne([1, 3, 5]));
