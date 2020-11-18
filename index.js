@@ -1121,6 +1121,7 @@ function middle_element(element) {
   console.log(abc);
 }
 console.log(middle_element([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+console.log("");
 /////////////////////////
 let array1 = [1, 2, 3, 4, 5];
 let array2 = [1, 2, 3, 4, 5, 6];
@@ -1134,6 +1135,7 @@ let middle = arr => {
 };
 console.log(middle(array1));
 console.log(middle(array2));
+console.log("");
 ////////////////////////////////////
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const findMiddleValue = arr => {
@@ -1143,6 +1145,7 @@ const findMiddleValue = arr => {
   console.log(arr[length]);
 };
 findMiddleValue(arr);
+console.log("");
 /////////////////////////////////////////
 // here is my general solution...
 const arre = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -1151,3 +1154,4 @@ let center =
     ? arre[(arre.length - 1) / 2]
     : [arre[arre.length / 2 - 1], arre[arre.length / 2]];
 console.log(center);
+console.log("");
