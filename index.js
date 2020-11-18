@@ -1134,3 +1134,20 @@ let middle = arr => {
 };
 console.log(middle(array1));
 console.log(middle(array2));
+////////////////////////////////////
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+const findMiddleValue = arr => {
+  let length = arr.length / 2;
+  if (arr.length % 2 === 1) console.log(arr[Math.floor(length)]);
+  else console.log(arr[length - 1]);
+  console.log(arr[length]);
+};
+findMiddleValue(arr);
+/////////////////////////////////////////
+// here is my general solution...
+const arre = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+let center =
+  arre.length % 2
+    ? arre[(arre.length - 1) / 2]
+    : [arre[arre.length / 2 - 1], arre[arre.length / 2]];
+console.log(center);
