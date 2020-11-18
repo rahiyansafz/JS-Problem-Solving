@@ -1122,3 +1122,15 @@ function middle_element(element) {
 }
 console.log(middle_element([1, 2, 3, 4, 5, 6, 7, 8, 9]));
 /////////////////////////
+let array1 = [1, 2, 3, 4, 5];
+let array2 = [1, 2, 3, 4, 5, 6];
+let middle = arr => {
+  let res = Math.floor(arr.length / 2);
+  if (arr.length % 2 == 1) {
+    return arr[res];
+  } else if (arr.length % 2 == 0) {
+    return arr.slice(res - 1, res + 1);
+  }
+};
+console.log(middle(array1));
+console.log(middle(array2));
