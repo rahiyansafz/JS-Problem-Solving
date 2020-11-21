@@ -1273,3 +1273,88 @@ console.log("Original array: " + arra + "\n");
 console.log(
   sort_by_string_length(["xyz", "acd", "aa", "bb", "zzz", "", "a", "b"])
 );
+console.log("");
+
+// 141
+// JavaScript program to find the number of elements which presents in both of the given arrays.
+
+function test_same_elements_both_arrays(arra1, arra2) {
+  let result = 0;
+  for (let i = 0; i < arra1.length; i++) {
+    for (let j = 0; j < arra2.length; j++) {
+      if (arra1[i] === arra2[j]) {
+        result++;
+      }
+    }
+  }
+  return result;
+}
+console.log(test_same_elements_both_arrays([1, 2, 3, 4], [1, 2, 3, 4]));
+console.log(test_same_elements_both_arrays([1, 2, 3, 4], [1, 2, 3, 5]));
+console.log(test_same_elements_both_arrays([1, 2, 3, 4], [11, 22, 33, 44]));
+console.log("");
+
+// 140
+// JavaScript program to check whether all the digits in a given number are the same or not.
+
+function testSameDigit(num) {
+  let arr = num.toString().split("");
+
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length - 1; j++) {
+      if (arr[i] != arr[j + 1]) return false;
+    }
+  }
+  return true;
+}
+
+console.log(testSameDigit(1234));
+console.log(testSameDigit(1111));
+console.log(testSameDigit(22222222));
+console.log("");
+
+// OR
+function sameDigits(n) {
+  let boor = [],
+    num = String(n);
+  for (let i = num.length - 1; i > 0; i--) {
+    boor.push(num[i] == num[i - 1]);
+  }
+  return boor.every(Boolean);
+}
+console.log(sameDigits(1234)); // false
+console.log(sameDigits(1111)); // true
+console.log(sameDigits(22222222)); // false
+console.log("");
+
+// 139
+// JavaScript program to find the position of a rightmost round number in an array of integers. Returns 0 if there are no round number.
+// Note: A round number is informally considered to be an integer that ends with one or more zeros.
+
+function find_rightmost_round_number(a) {
+  var result = 0;
+  for (var i = 0; i < a.length; i++) {
+    if (a[i] % 10 === 0) {
+      result = i;
+    }
+  }
+
+  return result;
+}
+
+console.log(find_rightmost_round_number([1, 22, 30, 54, 56]));
+console.log(find_rightmost_round_number([1, 22, 32, 54, 56]));
+console.log(find_rightmost_round_number([1, 22, 32, 54, 50]));
+console.log("");
+
+// 137
+// JavaScript program to test whether a given integer is greater than 15 return the given number, otherwise return 15.
+
+function checkingNum(a) {
+  if (a > 15) {
+    return a;
+  } else {
+    return 15;
+  }
+}
+console.log(checkingNum(10));
