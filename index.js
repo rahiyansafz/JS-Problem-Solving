@@ -1358,3 +1358,107 @@ function checkingNum(a) {
   }
 }
 console.log(checkingNum(10));
+console.log("");
+
+// 136
+// JavaScript program to replace the first digit in a string (should contains at least digit) with $ character.
+
+function replace_first_digit(input_str) {
+  return input_str.replace(/[0-9]/g, "$");
+}
+console.log(replace_first_digit("t4pescr1p7"));
+console.log(replace_first_digit("p3ython"));
+console.log(replace_first_digit("ab1cabc"));
+console.log("");
+
+// 135
+// JavaScript program to remove all characters from a given string that appear more than once.
+
+function remove_duplicate_cchars(str) {
+  var arr_char = str.split("");
+  var result_arr = [];
+
+  for (var i = 0; i < arr_char.length; i++) {
+    if (str.indexOf(arr_char[i]) === str.lastIndexOf(arr_char[i]))
+      result_arr.push(arr_char[i]);
+  }
+
+  return result_arr.join("");
+}
+console.log(remove_duplicate_cchars("abcdabc"));
+console.log(remove_duplicate_cchars("python"));
+console.log(remove_duplicate_cchars("abcabc"));
+console.log(remove_duplicate_cchars("1365451"));
+console.log("");
+
+// 134
+// JavaScript program to change the characters (lower case) in a string where a turns into z, b turns into y, c turns into x, ..., n turns into m, m turns into n, ..., z turns into a.
+
+function change_char(str1) {
+  var result = [];
+  for (var i = 0; i < str1.length; i++) {
+    var char_order = str1.charCodeAt(i) - "a".charCodeAt(0),
+      change_char = 25 - char_order + "a".charCodeAt(0);
+    result.push(String.fromCharCode(change_char));
+  }
+  return result.join("");
+}
+console.log(change_char("abcxyz"));
+console.log(change_char("python"));
+console.log("");
+
+// 133
+// JavaScript program to check whether a given fraction is proper or not.
+// Note: There are two types of common fractions, proper or improper. When the numerator and the denominator are both positive, the fraction is called proper if the numerator is less than the denominator, and improper otherwise.
+
+function proper_improper_test(num) {
+  return Math.abs(num[0] / num[1]) < 1
+    ? "Proper fraction."
+    : "Improper fraction.";
+}
+console.log(proper_improper_test([12, 300]));
+console.log(proper_improper_test([2, 4]));
+console.log(proper_improper_test([103, 3]));
+console.log(proper_improper_test([104, 2]));
+console.log(proper_improper_test([5, 40]));
+console.log("");
+
+// 131
+// JavaScript program to create an array of prefix sums of the given array.
+// In computer science, the prefix sum, cumulative sum, inclusive scan, or simply scan of a sequence of numbers x0, x1, x2, ... is a second sequence of numbers y0, y1, y2, ..., the sums of prefixes of the input sequence:
+//      y0 = x0
+//      y1 = x0 + x1
+//      y2 = x0 + x1+ x2
+
+function prefix_sums(arr) {
+  var new_arr = [];
+  for (var i = 0; i < arr.length; i++) {
+    new_arr[i] = 0;
+    for (var j = 0; j < i + 1; j++) {
+      new_arr[i] += arr[j];
+    }
+  }
+  return new_arr;
+}
+
+console.log(prefix_sums([1, 2, 3, 4, 5]));
+
+console.log(prefix_sums([1, 2, -3, 4, 5]));
+console.log("");
+
+// 130
+// JavaScript program to find the number of even digits in a given integer
+
+function even_digits(num) {
+  var ctr = 0;
+  while (num) {
+    ctr += num % 2 === 0;
+    num = Math.floor(num / 10);
+  }
+  return ctr;
+}
+
+console.log(even_digits(123));
+console.log(even_digits(1020));
+console.log(even_digits(102));
+//////////////////
