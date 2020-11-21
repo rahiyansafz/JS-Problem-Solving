@@ -1461,4 +1461,59 @@ function even_digits(num) {
 console.log(even_digits(123));
 console.log(even_digits(1020));
 console.log(even_digits(102));
-//////////////////
+console.log("");
+
+// 127
+// JavaScript program to reverse the order of the bits in a given integer. Go to the editor
+// 56 -> 111000 after reverse 7 -> 111
+// 234 -> 11101010 after reverse 87 -> 1010111
+function mirror_bits(n) {
+  return parseInt(
+    n
+      .toString(2)
+      .split("")
+      .reverse()
+      .join(""),
+    2
+  );
+}
+
+console.log(mirror_bits(56));
+console.log(mirror_bits(234));
+console.log("");
+/////////////////////////////
+// 126
+// JavaScript program to get the largest even number from an array of integers.
+
+function max_even(arra) {
+  arra.sort((x, y) => y - x);
+
+  for (let i = 0; i < arra.length; i++) {
+    if (arra[i] % 2 == 0) {
+      return arra[i];
+    }
+  }
+}
+
+console.log(max_even([20, 40, 200]));
+console.log(max_even([20, 40, 200, 301, 400]));
+console.log("");
+//////////////////////////////////
+
+// 125
+//JavaScript program to find the longest string from a given array.
+
+function longest_str_in_array(arra) {
+  var max_str = arra[0].length;
+  var ans = arra[0];
+  for (var i = 1; i < arra.length; i++) {
+    var maxi = arra[i].length;
+    if (maxi > max_str) {
+      ans = arra[i];
+      max_str = maxi;
+    }
+  }
+  return ans;
+}
+console.log(longest_str_in_array(["ab", "a", "abcd"]));
+console.log(longest_str_in_array(["ab", "ab", "ab"]));
