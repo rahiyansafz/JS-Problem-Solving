@@ -1155,3 +1155,121 @@ let center =
     : [arre[arre.length / 2 - 1], arre[arre.length / 2]];
 console.log(center);
 console.log("");
+
+// 149 LAST OF W3RESOURCE
+// JavaScript program to change the capitalization of all letters in a given string.
+
+function change_case(txt) {
+  let str1 = "";
+  for (let i = 0; i < txt.length; i++) {
+    if (/[A-Z]/.test(txt[i])) str1 += txt[i].toLowerCase();
+    else str1 += txt[i].toUpperCase();
+  }
+  return str1;
+}
+
+console.log(change_case("typescript"));
+console.log(change_case("ANGULAR"));
+console.log("");
+/////////////////
+
+// 148
+// JavaScript program to swap two halves of a given array of integers of even length.
+
+function halfSwapping(x) {
+  if (x.length % 2 != 0) {
+    return false;
+  }
+
+  for (var i = 0; i < x.length / 2; i++) {
+    let tmp = x[i];
+    x[i] = x[i + x.length / 2];
+    x[i + x.length / 2] = tmp;
+  }
+  return x;
+}
+
+console.log(halfSwapping([1, 2, 3, 4, 5, 6]));
+console.log(halfSwapping([1, 2, 3, 4, 5, 6, 7]));
+console.log("");
+
+////////////////
+
+// 147
+// JavaScript program to compute the sum of all digits that occur in a given string.
+
+function sum_digits_from_string(x) {
+  var sum = 0;
+
+  for (let i = 0; i < x.length; i++) {
+    if (/[0-9]/.test(x[i])) sum += parseInt(x[i]);
+  }
+  return sum;
+}
+
+console.log(sum_digits_from_string("abcd12efg9"));
+console.log(sum_digits_from_string("w3resource"));
+console.log("");
+
+// 145
+// JavaScript program to find the maximum integer n such that 1 + 2 + ... + n <= a given integer.
+
+function maxInt(num) {
+  let memo, formula;
+  for (let i = 0; i <= num; i++) {
+    for (let j = 0; j <= i; j++) {
+      formula = (i * 2) / (j + 1);
+      if (j == formula) {
+        memo = j;
+      }
+    }
+  }
+  return memo;
+}
+console.log(maxInt(11)); // 3
+console.log(maxInt(15)); // 5
+console.log(maxInt(21)); // 6
+console.log("");
+
+// 144
+// JavaScript program to break an address of an url and put it's part into an array.
+
+function break_address(url_add) {
+  var data = url_add.split("://");
+  var protocol = data[0];
+  data = data[1].split(".com");
+  var domain = data[0];
+  data = data[1].split("/");
+
+  if (data[1]) {
+    return [protocol, domain, data[1]];
+  }
+
+  return [protocol, domain];
+}
+
+var url_add = "https://stackblitz.com/";
+console.log("Original address: " + url_add);
+console.log(break_address(url_add));
+console.log("");
+
+//143
+// JavaScript program to sort the strings of a given array of strings in the order of increasing lengths
+
+function sort_by_string_length(arra) {
+  for (var i = 0; i < arra.length; i++) {
+    for (var j = i + 1; j < arra.length; j++) {
+      if (arra[i].length > arra[j].length) {
+        var m = arra[i];
+        arra[i] = arra[j];
+        arra[j] = m;
+      }
+    }
+  }
+  return arra;
+}
+var arra = ["xyz", "acd", "aa", "bb", "zzz", "", "a", "b"];
+console.log("Original array: " + arra + "\n");
+console.log(
+  sort_by_string_length(["xyz", "acd", "aa", "bb", "zzz", "", "a", "b"])
+);
