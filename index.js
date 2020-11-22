@@ -919,9 +919,9 @@ function city_name(str) {
     (str.substring(0, 3) == "Los" || str.substring(0, 3) == "New")
   ) {
     return str;
+  } else {
+    return "";
   }
-
-  return "";
 }
 
 console.log(city_name("New York"));
