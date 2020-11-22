@@ -1577,6 +1577,7 @@ function matrix(a) {
 console.log(matrix([[1, 0, 0], [2, 0, 0], [0, 3, 3]]));
 console.log(matrix([[1, 0, 1], [2, 0, 0], [0, 3, 3]]));
 console.log("");
+
 // 120
 // JavaScript program to check whether a point lies strictly inside a given circle.
 // Center of the circle (x, y)
@@ -1594,4 +1595,22 @@ function check_a_point(a, b, x, y, r) {
 
 console.log(check_a_point(0, 0, 2, 4, 6));
 console.log(check_a_point(0, 0, 6, 8, 6));
+console.log("");
+
+// 119
+// JavaScript program to check whether a given integer has an increasing digits sequence
+
+function incDigSeq(num) {
+  var numStr = num.toString().split("");
+
+  for (var i = 0; i < numStr.length - 1; i++) {
+    if (numStr[i] >= numStr[i + 1]) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(incDigSeq(123));
+console.log(incDigSeq(1223));
+console.log(incDigSeq(45677));
 console.log("");
