@@ -1553,4 +1553,26 @@ function makeit(a, b) {
 console.log(makeit(true, false));
 console.log(makeit(true, true));
 console.log("");
-//
+
+// 123
+// JavaScript program to find whether the members of a given array of integers is a permutation of numbers from 1 to a given integer.
+// 122
+// JavaScript program to check whether a given array of integers represents either a strictly increasing or a strictly decreasing sequence.
+console.log("NO 122 & 123 QUESTION DIDNT UNDERSTOOD");
+console.log("");
+
+// 121
+//JavaScript program to check whether a given matrix is lower triangular or not. Go to the editor
+// Note: A square matrix is called lower triangular if all the entries above the main diagonal are zero.
+
+function matrix(a) {
+  for (let i = 0; i < a.length; i++) {
+    for (let j = 0; j < a[0].length; j++) {
+      if (j > i && a[i][j] !== 0) return false;
+    }
+  }
+  return true;
+}
+
+console.log(matrix([[1, 0, 0], [2, 0, 0], [0, 3, 3]]));
+console.log(matrix([[1, 0, 1], [2, 0, 0], [0, 3, 3]]));
