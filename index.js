@@ -1578,14 +1578,13 @@ console.log(matrix([[1, 0, 0], [2, 0, 0], [0, 3, 3]]));
 console.log(matrix([[1, 0, 1], [2, 0, 0], [0, 3, 3]]));
 console.log("");
 // 120
-// JavaScript program to check whether a point lies strictly inside a given circle. Go to the editor
-// Input:
+// JavaScript program to check whether a point lies strictly inside a given circle.
 // Center of the circle (x, y)
 // Radius of circle: r
 // Point inside a circle (a, b)
 
 function check_a_point(a, b, x, y, r) {
-  var dist_points = (a - x) * (a - x) + (b - y) * (b - y);
+  let dist_points = (a - x) * (a - x) + (b - y) * (b - y);
   r *= r;
   if (dist_points < r) {
     return true;
