@@ -1517,3 +1517,40 @@ function longest_str_in_array(arra) {
 }
 console.log(longest_str_in_array(["ab", "a", "abcd"]));
 console.log(longest_str_in_array(["ab", "ab", "ab"]));
+console.log(" ");
+///////////////////////
+var numbers = [65, 44, 12, 4];
+numbers.forEach(myFunction);
+
+function myFunction(item, index, arr) {
+  arr[index] = item * 10;
+}
+console.log(numbers);
+
+console.log(" ");
+
+function anyFunction() {
+  var number = [65, 44, 12, 4];
+  var arr = [];
+  for (let i = 0; i < number.length; i++) {
+    arr.push(10 * number[i]);
+  }
+  console.log(arr);
+}
+
+anyFunction();
+console.log("");
+
+// 124
+//JavaScript program to create the value of NOR of two given booleans. Go to the editor
+//Note: In boolean logic, logical nor or joint denial is a truth-functional operator which produces a result that is the negation of logical or. That is, a sentence of the form (p NOR q) is true precisely when neither p nor q is true - i.e. when both of p and q are false
+//Sample Example:
+//For x = true and y = false, the output should be logical_Nor(x, y) = false; For x = false and y = false, the output should be logical_Nor(x, y) = true.
+
+function makeit(a, b) {
+  return (!a && !b) || (a && b);
+}
+console.log(makeit(true, false));
+console.log(makeit(true, true));
+console.log("");
+//
