@@ -1595,3 +1595,4 @@ function check_a_point(a, b, x, y, r) {
 
 console.log(check_a_point(0, 0, 2, 4, 6));
 console.log(check_a_point(0, 0, 6, 8, 6));
+console.log("");
