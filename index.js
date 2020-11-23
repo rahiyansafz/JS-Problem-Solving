@@ -1643,16 +1643,13 @@ console.log(correctString("Lake."));
 ////////// OR function correctSentence(str) {
 
 function correctSentence(str) {
+  if (str.charCodeAt(0) >= 65 && str.charCodeAt(0) <= 90 && str.endsWith(".")) {
+    return true;
+  }
 
-if (str.charCodeAt(0) >= 65 &&
-str.charCodeAt(0) <= 90 &&
-str.endsWith('.')) {
-return true;
+  return false;
 }
 
-return false;
-}
-
-console.log(correctSentence('Come on over.')); // true
-console.log(correctSentence('Come on over')); // false
-console.log(correctSentence('come on over.')); // false
+console.log(correctSentence("Come on over.")); // true
+console.log(correctSentence("Come on over")); // false
+console.log(correctSentence("come on over.")); // false
