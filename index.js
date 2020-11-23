@@ -1625,3 +1625,34 @@ function is_inrange(x, y, z) {
 console.log(is_inrange(1, 2, 3));
 console.log(is_inrange(1, 2, -1));
 console.log("");
+
+// 114
+// JavaScript program to check whether a given string represents a correct sentence or not. A string is considered correct sentence if it starts with the capital letter and ends with a full stop (.)
+
+correctString = str => {
+  let up = str.substring(0, 1);
+  let fs = str.slice(-1);
+  if (up === up.toUpperCase() && fs === ".") {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log(correctString("Lake."));
+////////// OR function correctSentence(str) {
+
+function correctSentence(str) {
+
+if (str.charCodeAt(0) >= 65 &&
+str.charCodeAt(0) <= 90 &&
+str.endsWith('.')) {
+return true;
+}
+
+return false;
+}
+
+console.log(correctSentence('Come on over.')); // true
+console.log(correctSentence('Come on over')); // false
+console.log(correctSentence('come on over.')); // false
