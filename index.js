@@ -1624,3 +1624,4 @@ function is_inrange(x, y, z) {
 
 console.log(is_inrange(1, 2, 3));
 console.log(is_inrange(1, 2, -1));
+console.log("");
