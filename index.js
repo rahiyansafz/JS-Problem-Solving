@@ -1655,20 +1655,6 @@ console.log(correctSentence("Come on over")); // false
 console.log(correctSentence("come on over.")); // false
 console.log("");
 
-/////////////////////////////////////////
-
-var str = "Hello world! ";
-
-console.log(str.repeat(3));
-
-let bar = str.repeat(2);
-
-console.log(bar);
-
-console.log(`${bar}`);
-console.log(`${str}`);
-console.log("");
-
 ////////////////////////////////////////
 // palindrome
 //
@@ -1744,3 +1730,5 @@ for (var i = 0; i < words.length; i++) {
   );
 }
 console.log("");
+
+/////////////////////////////
