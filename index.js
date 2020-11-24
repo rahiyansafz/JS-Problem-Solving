@@ -1656,3 +1656,91 @@ console.log(correctSentence("come on over.")); // false
 console.log("");
 
 /////////////////////////////////////////
+
+var str = "Hello world! ";
+
+console.log(str.repeat(3));
+
+let bar = str.repeat(2);
+
+console.log(bar);
+
+console.log(`${bar}`);
+console.log(`${str}`);
+console.log("");
+
+////////////////////////////////////////
+// palindrome
+//
+
+//////  NO One
+
+function palindrome(str) {
+  var re = /[\W_]/g;
+  var lowRegStr = str.toLowerCase().replace(re, "");
+  var reverseStr = lowRegStr
+    .split("")
+    .reverse()
+    .join("");
+  return reverseStr === lowRegStr;
+}
+console.log(palindrome("A man, a plan, a canal. Panama"));
+console.log("");
+
+////// NO two
+
+function palindrome(str) {
+  var re = /[^A-Za-z0-9]/g;
+  str = str.toLowerCase().replace(re, "");
+  var len = str.length;
+  for (var i = 0; i < len / 2; i++) {
+    if (str[i] !== str[len - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(palindrome("A man, a plan, a canal. Panama"));
+console.log("");
+
+////////////////// NO Three!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+function isPalindrome(str) {
+  str = str.toLowerCase();
+  let len = str.length - 1;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] != str[len - i]) {
+      return false;
+    }
+    if (i == len - i) return true;
+  }
+  return true;
+}
+console.log(isPalindrome("madam")); // true
+console.log(isPalindrome("Step on no pets")); // true
+console.log(isPalindrome("A man, a plan, a canal. Panama")); // false
+console.log("");
+
+////////////////// NO Four!!!!!!!!!
+
+let words = ["madam", "banana", "pal", "saturn"];
+
+function validatePalindrome(word) {
+  return (
+    word ===
+    word
+      .toLowerCase()
+      .split("")
+      .reverse()
+      .join("")
+  );
+}
+
+for (var i = 0; i < words.length; i++) {
+  console.log(
+    `${words[i]} ${
+      validatePalindrome(words[i]) ? "is a" : "is not a"
+    } palindrome.`
+  );
+}
+console.log("");
